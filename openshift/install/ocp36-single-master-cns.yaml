@@ -39,7 +39,7 @@ openshift_hosted_etcd_storage_labels={'storage': 'etcd'}
 
 openshift_template_service_broker_namespaces=['openshift']
 
-openshift_disable_check=memory_availability,docker_storage,disk_availability
+openshift_disable_check=memory_availability,docker_storage,disk_availability,package_version
 
 openshift_master_identity_providers=[{'name': 'Local', 'login': 'true', 'challenge': 'true', 'kind': 'HTPasswdPasswordIdentityProvider', 'filename': '/etc/origin/master/users.htpasswd'}]
 
